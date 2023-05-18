@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="imatges/icona/icon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacions</title>
+</head>
+<style>
+/*TAULA*/
+table{
+    border: 2px solid black;
+}
+
+.table {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 70px;
+}
+
+td{
+    border: 2px solid black;
+}
+
+/*LLETRES*/
+#lletra1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: lletra1;
+  animation-duration: 4s;
+  text-align: center;
+}
+
+@keyframes lletra1 {
+  0%   {transform: rotate(0deg)}
+  25%  {transform: rotate(-70deg)}
+  50%  {transform: rotate(-180deg)}
+  750% {transform: rotate(-270deg)}
+  100% {transform: rotate(-360deg)}
+}
+
+#lletra2{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: lletra2;
+  animation-duration: 4s;
+  text-align: center;
+}
+
+@keyframes lletra2 {
+  0%   {transform: translate(0px, 0px);}
+  25%  {transform: translate(-50px, 50px);}
+  50%  {transform: translate(-100px, 100px);}
+  75%  {transform: translate(-50px, 50px);}
+  100% {transform: translate(0px, 00px);}
+}
+
+#lletra3{
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  animation-name: lletra3;
+  animation-duration: 4s;
+  text-align: center;
+}
+
+@keyframes lletra3 {
+  0%   {transform: skewX(0deg);}
+  25%  {transform: skewX(120deg);}
+  50%  {transform: skewX(360deg);}
+  75%  {transform: skewX(-120deg);}
+  100% {transform: skewX(0deg);}
+}
+
+#lletra4{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation-name: lletra4;
+  animation-duration: 4s;
+  text-align: center;
+}
+
+@keyframes lletra4 {
+  0%   {transform: translate(0px, 0px);}
+  25%  {transform: translate(50px, 50px);}
+  50%  {transform: translate(100px, 100px);}
+  75%  {transform: translate(50px, 50px);}
+  100% {transform: translate(0px, 00px);}
+}
+
+#lletra5{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  animation-name: lletra5;
+  animation-duration: 4s;
+  text-align: center;
+}
+
+@keyframes lletra5 {
+  0%   {transform: rotate(0deg)}
+  25%  {transform: rotate(70deg)}
+  50%  {transform: rotate(180deg)}
+  750% {transform: rotate(270deg)}
+  100% {transform: rotate(360deg)}
+}
+
+/*Divs de Colors*/
+
+#boresdiv{
+  border: 4px solid black;
+  margin: 50px;
+}
+
+#div1{
+  background-color: aqua;
+  border: 2px solid aqua;
+  margin-left: 400px;
+  margin-right: 400px;
+  height: 5px;
+  animation-name: aqua12;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aqua12 {
+  0%   {margin-left: 400px; margin-right: 400px; background-color: aqua;}
+  25%  {margin-left: 200px; margin-right: 200px;}
+  50%  {margin-left: 100px; margin-right: 100px;background-color: greenyellow;}
+  750% {margin-left: 200px; margin-right: 200px;}
+  100% {margin-left: 400px; margin-right: 400px;background-color: aquamarine;}
+}
+
+#div2{
+  background-color: blue;
+  border: 2px solid blue;
+  margin-left: 400px;
+  margin-right: 400px;
+  height: 5px;
+  animation-name: aqua23;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aqua23 {
+  0%   {margin-left: 350px; margin-right: 350px; background-color: blue;}
+  25%  {margin-left: 175px; margin-right: 175px;}
+  50%  {margin-left: 50px; margin-right: 50px;background-color: blue;}
+  750% {margin-left: 175px; margin-right: 175px;}
+  100% {margin-left: 350px; margin-right: 350px;background-color: blue;}
+}
+
+#div3{
+  background-color: red;
+  border: 2px solid red;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 5px;
+  animation-name: aqua34;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aqua34 {
+  0%   {margin-left: 50px; margin-right: 50px; background-color: red;}
+  25%  {margin-left: 150px; margin-right: 150px;}
+  50%  {margin-left: 300px; margin-right: 300px;background-color: rebeccapurple;}
+  750% {margin-left: 150px; margin-right: 150px;}
+  100% {margin-left: 50px; margin-right: 50px;background-color: red;}
+}
+
+#div4{
+  background-color: white;
+  border: 2px solid white;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 5px;
+  animation-name: aqua45;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aqua45 {
+  0%   {margin-left: 50px; margin-right: 50px;background-color: white;}
+  25%  {margin-left: 150px; margin-right: 150px; background-color: black;}
+  50%  {margin-left: 300px; margin-right: 300px;background-color: white;}
+  750% {margin-left: 150px; margin-right: 150px; background-color: black;}
+  100% {margin-left: 50px; margin-right: 50px;background-color: white;}
+}
+
+/*Direccionament*/
+
+p{
+  margin: 50px;
+  font-size: 300%;
+}
+
+#emoji1{
+  max-width:10%;
+  max-height:10%;
+  position: relative;
+  animation-timing-function: linear;
+  animation: emoji1 10s infinite;
+  margin: 0 auto;
+    display: flex;
+  justify-content: left;
+}
+
+@keyframes emoji1 {
+  0% {right:0px; left:0px;}
+  25% {left:150px; left:200px;}
+  50% {left:200px; left:800px;}
+  75% {left:00px; left: 600;}
+  100% {left:200px; left:400px;}
+}
+
+#emoji2{
+  max-width:10%;
+  max-height:10%;
+  position: relative;
+  animation-timing-function: linear;
+  animation: emoji2 10s infinite;
+  
+}
+
+@keyframes emoji2 {
+  0% {right:0px; left:0px;}
+  25% {left:100px; left:150px;}
+  50% {left:170px; left:400px;}
+  75% {left:00px; left: 600;}
+  100% {left:200px; left:400px;}
+}
+
+/*Video i audio*/
+
+.video{
+  margin: 0 auto;
+    display: flex;
+  justify-content: center;
+}
+
+.audio{
+  margin: 0 auto;
+    display: flex;
+  justify-content: center;
+}
+
+</style>
+<body>
+    <!--TitleGAMES-->
+    <table class="table">
+        <tr>
+            <td id="lletra1">G</td>
+            <td id="lletra2">A</td>
+            <td id="lletra3">M</td>
+            <td id="lletra4">E</td>
+            <td id="lletra5">S</td>
+        </tr>
+    </table>
+<br>
+<br>
+    <div id="boresdiv">
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+    </div>
+
+    <p id="emoji1">🎮</p>
+    <p id="emoji2">🕹️</p>
+<br>
+<br>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mHpr96Moa3U?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+<br>
+<audio controls class="audio">
+  <source src="valorant-ace-sound.mp3" type="audio/mp3">
+      Tu navegador no soporta audio HTML5.
+</audio>
+
+</body>
+</html>
